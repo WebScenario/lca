@@ -14,8 +14,10 @@
         <link rel="stylesheet" href="../css/bootstrap.min.css">
         <link rel="stylesheet" href="../css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="../css/main.css">
+        <link rel="stylesheet" href="../css/estilo_contacto.css">
 
         <script src="../js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        
 
     </head>
     <body>
@@ -75,7 +77,34 @@
 
 <!-- //////////////////////////////////// CONTENIDO /////////////////////////////////////////////////// -->
     <!-- Mapa de google maps -->
-    <div id="googleMap" style="width:500px;height:380px;"></div>
+	<div id="googleMap" style="width:100%;height:400px;"></div>
+	
+	<div class="container">
+					  <h2>Formulario de Contacto</h2><hr />
+						  <form role="form" method="post" id="formu" name="formu">
+						  
+						   <div class="form-group">
+							   <label for="email">Email:</label>
+							   <input type="email" class="form-control" id="email" name="email" placeholder="Ingresar email">
+						   </div>
+								
+						   <div class="form-group">
+						   	   <label for="asunto">Asunto:</label>
+						   	   <input type="text" class="form-control" id="asunto"name="asunto" placeholder="Ingresar asutno">
+						   </div>
+								
+						   <div class="form-group">
+								<label for="commentario">Mensaje:</label>
+								<textarea class="form-control" rows="5" id="commentario" name="msj" placeholder="Ingresar mensaje"></textarea>
+						   </div>
+								
+							<button type="submit" class="btn btn-success" id="enviar" name="enviar">Enviar</button>
+					 </form><br />
+						  
+					 <div class="alert alert-info" id="resultado" name="resultado" style="display: none;">
+					</div><br /><br />
+	</div>
+    
 
 <!-- ///////////////////////////////////// SCRIPTS //////////////////////////////////////////////////// -->
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
@@ -85,6 +114,8 @@
 
         <script src="../js/plugins.js"></script>
         <script src="../js/main.js"></script>
+		
+		<!--<script src="../js/valida_form.js"></script>-->
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
@@ -97,13 +128,38 @@
         </script>
 
 <!-- ///////////////////////////////////////////////////////////////////////////////////////////// -->
-         <!-- JQuery para submenu -->
+        <!-- JQuery -->
         <script>
             $(document).ready(function(){
-                $("#itemInstitucional").click(function(){
+			
+                <!-- JQuery para submenu -->
+				$("#itemInstitucional").click(function(){
                     $("#subMenu").slideToggle();
                  // $("#itemInstitucional").css("background-color", "white");
                 });
+				
+				<!-- JQuery para form -->
+				$("#enviar").click(verifica);	
+			
+				function verifica(){
+						
+						$("#resultado").fadeOut();
+							
+						$.ajax({
+								type: 'post',
+								url: '../php/php_valida/valida_po.php',
+								data: $("#formu").serialize(), 
+								beforeSend: function () {      
+													  $("#resultado").html("Procesando, espere por favor...");
+														},
+								success: function(msj){
+													   $("#resultado").toggle("slow",function(){ // se puede utilizar fadeOut o toggle
+																								$("#resultado").html(msj);																				
+																								});
+													   }
+													 
+							});
+				}
             });
         </script>
         
@@ -115,7 +171,7 @@
             function initialize() {
                 var mapProp = {
                   center:myCenter,
-                  zoom: 12,
+                  zoom: 14,
                   mapTypeId: google.maps.MapTypeId.ROADMAP
                 };
 
