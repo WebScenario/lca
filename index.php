@@ -16,49 +16,68 @@
         <link rel="stylesheet" href="css/main.css">
 
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+
     </head>
     <body>
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-   <!-- ///////////////////////////////////////////////////////////////////////////////////// -->
     
-    <!-- Encabezado de la pagina -->
-    <section id="encabezado">
-        <div id="encabezadoArriba">
-            <img class="img-responsive" src="images/favicon.ico" alt="logo">
-            
-            <!-- Menu principal -->
-            <div id="menuPrincipal">
-                <ul>
-                    <li>items</li>
-                    <li>items</li>
-                    <li>items</li>
-                    <li>items</li>
+    <!-- Menu principal -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div id="menuPrincipal" class="container-fluid">
+            <div class="navbar-header" maedia="min-witdh:1080px">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-1">
+                    <span class="sr-only">Menu</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <a class="navbar-brand" href="index.php">
+                    <img alt="logo" src="images/logo.ico" class="img-responsive">
+                    <span>LOS CUATRO ASES</span>
+                </a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="navbar-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="liPadre"><a href="index.php">INICIO</a></li>
+                    
+                    <!-- Submenu -->
+                    <li id="itemInstitucional" class="dropdown liPadre">
+                        <a id="linkInstitucional" class="dropdown-toggle" data-toggle="dropdown" role="button">
+                            INSTITUCIONAL <span class="caret"></span>
+                        </a>  
+                        <ul id="submenuHamburguesa" class="dropdown-menu" role="menu">
+                            <li><a href="php/empresa.php">LA EMPRESA</a></li>
+                            <li><a href="php/politicas.php">POL&Iacute;TICAS</a></li>
+                            <li><a href="php/vision_mision.php">VISI&Oacute;N Y MISI&Oacute;N</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="liPadre"><a href="php/contacto.php">CONTACTO</a></li>
                 </ul>
             </div>
         </div>
-        <div id="encabezadoAbajo">
-            <p>Los Cuatro Ases</hp>
-        </div>
-    </section>
-
-    <!-- Contenidos -->
-    <section id="fotoPrincipal">
         
-    </section>
+        <!-- Submenu en pantalla mayor a xs -->
+        <div id="subMenu" class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbar-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="liPadre"><a href="php/empresa.php">LA EMPRESA</a></li>
+                    <li class="liPadre"><a href="php/politicas.php">POL&Iacute;TICAS</a></li>
+                    <li class="liPadre"><a href="php/vision_mision.php">VISI&Oacute;N Y MISI&Oacute;N</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-    <section id="informacionCentral">
-            
-    </section>
+<!-- //////////////////////////////////// CONTENIDO /////////////////////////////////////////////////// -->
+    <!-- Mapa de google maps -->
+    <img src="images/video.jpg" alt="foto">
     
-    <!-- Footer -->
-    <footer>
-  
-    </footer>
-
-<!-- /////////////////////////////////////////////////////////////////////////////////////// -->
-    
+<!-- ///////////////////////////////////// SCRIPTS //////////////////////////////////////////////////// -->
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 
@@ -75,6 +94,42 @@
             e.src='//www.google-analytics.com/analytics.js';
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+        </script>
+
+<!-- ///////////////////////////////////////////////////////////////////////////////////////////// -->
+         <!-- JQuery para submenu -->
+        <script>
+            $(document).ready(function(){
+                $("#itemInstitucional").click(function(){
+                    $("#subMenu").slideToggle();
+                 // $("#itemInstitucional").css("background-color", "white");
+                });
+            });
+        </script>
+        
+        <!-- Google maps -->
+        <script src="http://maps.googleapis.com/maps/api/js"></script>
+        <script>
+            var myCenter= new google.maps.LatLng(-34.76962901102461, -58.473983799999985);
+            
+            function initialize() {
+                var mapProp = {
+                  center:myCenter,
+                  zoom: 12,
+                  mapTypeId: google.maps.MapTypeId.ROADMAP
+                };
+
+                var map=new google.maps.Map(document.getElementById("googleMap"), mapProp);
+
+                var marker=new google.maps.Marker({
+                  position:myCenter,
+                  });
+
+                marker.setMap(map);
+            }
+
+            // Carga el mapa
+            google.maps.event.addDomListener(window, 'load', initialize);
         </script>
     </body>
 </html>
