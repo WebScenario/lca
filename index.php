@@ -10,13 +10,16 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"/>
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon"/>
 
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="css/main.css">
 
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-
+    
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -74,7 +77,6 @@
     </nav>
 
 <!-- //////////////////////////////////// CONTENIDO /////////////////////////////////////////////////// -->
-    <!-- Mapa de google maps -->
     <img src="images/video.jpg" alt="foto">
     
 <!-- ///////////////////////////////////// SCRIPTS //////////////////////////////////////////////////// -->
@@ -102,34 +104,8 @@
             $(document).ready(function(){
                 $("#itemInstitucional").click(function(){
                     $("#subMenu").slideToggle();
-                 // $("#itemInstitucional").css("background-color", "white");
                 });
             });
-        </script>
-        
-        <!-- Google maps -->
-        <script src="http://maps.googleapis.com/maps/api/js"></script>
-        <script>
-            var myCenter= new google.maps.LatLng(-34.76962901102461, -58.473983799999985);
-            
-            function initialize() {
-                var mapProp = {
-                  center:myCenter,
-                  zoom: 12,
-                  mapTypeId: google.maps.MapTypeId.ROADMAP
-                };
-
-                var map=new google.maps.Map(document.getElementById("googleMap"), mapProp);
-
-                var marker=new google.maps.Marker({
-                  position:myCenter,
-                  });
-
-                marker.setMap(map);
-            }
-
-            // Carga el mapa
-            google.maps.event.addDomListener(window, 'load', initialize);
         </script>
     </body>
 </html>

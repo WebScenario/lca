@@ -11,6 +11,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
+        <link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon"/>
+        <link rel="icon" href="../images/favicon.ico" type="image/x-icon"/>
+
         <link rel="stylesheet" href="../css/bootstrap.min.css">
         <link rel="stylesheet" href="../css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="../css/main.css">
@@ -79,6 +82,7 @@
     <!-- Mapa de google maps -->
 	<div id="googleMap" style="width:100%;height:400px;"></div>
 	
+    <!-- Formulario de contacto -->
 	<div class="container">
 					  <h2>Formulario de Contacto</h2><hr />
 						  <form role="form" method="post" id="formu" name="formu">
