@@ -49,6 +49,7 @@
 		font-family: Verdana, Geneva, sans-serif;
 	}
 		#navbar-1 .liPadre:hover{
+			margin-bottom: -3px;
 			border-bottom-width: 3px;
 			border-bottom-style: solid;
 			border-bottom-color: #990000;
@@ -72,6 +73,11 @@
 		/* div contenedor del logo y titulo */
 		#navbar-1{
 			margin-right: 0px;
+		}
+
+		/* Borde que separa el submenu */
+		#subMenu{
+			border-top-width: 0px;
 		}
 
 		/*esto es un codigo que sobreescribe el punto de quiebre (collapse) del menu y lo hace hamburguesa*/
