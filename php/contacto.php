@@ -147,7 +147,7 @@
 							
 						$.ajax({
 								type: 'post',
-								url: '../php/php_valida/valida_po.php',
+								url: 'php_valida/valida_po.php',
 								data: $("#formu").serialize(), 
 								beforeSend: function () {      
 													  $("#resultado").html("Procesando, espere por favor...");
