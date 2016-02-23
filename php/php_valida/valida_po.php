@@ -24,30 +24,31 @@
 		
 			public function validaDatos(){
 				if( $this->email == "" ){
-					$this->errores.= "<br /> Ingrese su email por favor.";
+					$this->errores.= "<strong>* Ingrese su email por favor.</strong><br />";
 				}else if( !preg_match($this->sintax,$this->email)){
-					$this->errores.= "<br /> Ingrese formato correcto de email  <br /> 'ej: nombre@dominio.com' .";
+					$this->errores.= "<strong>* Ingrese formato correcto de email</strong><br /> 'ej: nombre@dominio.com' .<br />";
 					}
 				
 				if( $this->asunto == "" ){
-					$this->errores.= "<br /> Ingrese su asunto por favor.";
+					$this->errores.= "<strong>* Ingrese su asunto por favor. </strong><br />";
 				}else if( strlen($this->asunto) > 20 ){
-					$errores.= "<br /> Escriba un asunto con menos caracteres.";
+					$errores.= "<strong>* Escriba un asunto con menos caracteres. </strong><br />";
 					}
 							 
 					if( $this->msj == "" ){
-					$this->errores.= "<br /> Ingrese su mensaje por favor.";
+					$this->errores.= "<strong>* Ingrese su mensaje por favor. </strong><br />";
 				}else if( strlen($this->msj) > 200 ){
-					$this->errores.= "<br /> Maximo permitido 200 caracteres.";
+					$this->errores.= "<strong>* Maximo permitido 200 caracteres. </strong><br />";
 					}
 			}
 	
 		public function response(){
 			if( !empty($this->errores)){
+				echo '<u>Lista de errores:</u> <br />';
 				echo  $this->errores;
 			}else{
 					//mail($destinatario, $asunto, $msj);
-					echo "<br />Mensaje enviado con exito";
+					echo "Mensaje enviado con exito";
 					 echo "<script type='text/javascript'>  parent.document.formu.reset(); </script>";  
 			}
 		}
