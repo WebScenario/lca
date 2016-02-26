@@ -38,7 +38,7 @@
                 </button>
 
                 <a class="navbar-brand" href="index.php">
-                    <img alt="logo" src="../images/logo.ico" class="img-responsive">
+                    <img alt="logo" src="images/logo.ico" class="img-responsive">
                     <span>LOS CUATRO ASES</span>
                 </a>
             </div>
