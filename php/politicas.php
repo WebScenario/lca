@@ -6,7 +6,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Contacto - Los Cuatro Ases</title>
+        <title>Institucional - Politicas</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -80,36 +80,32 @@
     </nav>
 
 <!-- //////////////////////////////////// CONTENIDO /////////////////////////////////////////////////// -->
-	<!-- Mapa de google maps -->
-	<div id="googleMap" style="width:100%;height:400px;"></div>
-	
-	<div class="container" style="margin-top:10px;width:50%;">
-					  <h2>Formulario de Contacto</h2>
-					  <hr />
-						<form  role="form" id="formu" name="formu" method="post" >
-							
-							<div class="form-group">
-								<label for="email">Email:</label>
-									<input type="email" class="form-control" id="email" name="email" placeholder="Ingrese su email"/>
-							</div>
-							
-							<div class="form-group">
-								<label for="asunto">Asunto:</label>
-									<input type="text" class="form-control" id="asunto" name="asunto" placeholder="Ingrese su asunto"/>
-							</div>
-							
-							<div class="form-group">
-								<label for="commentario">Mensaje:</label>
-									<textarea class="form-control" id="msj" name="msj" rows="5" placeholder="Ingrese su mensaje"></textarea>
-							</div>
-							
-							<input class="btn btn-success" type="button" value="Enviar mensaje" id="enviar" name="enviar"/>
-						</form>
-						
-						<br />
-						<div id="resultado"></div>
+	<div class="container" style="margin-top:150px;width:50%;">
+		<div class="row">
+			<div class="col-md-12">
+					<h3>Políticas</h3><hr />
+					<p>Fábrica de Carrocerías Los Cuatro Ases S.A. dedicada a la fabricación y reparación de 
+						carrocerías,  es una empresa con muchos años de experiencia y responsabilidad en el 
+						mercado del transporte de carga, en el cual ha logrado un sólido posicionamiento de la 
+						marca “Los Cuatro Ases”. 
+						Nuestra misión es producir y comercializar, de manera sustentable, carrocerías que 
+						respondan a las necesidades del transportista, combinando eficiencia y calidad. 
+						Para lograr el propósito de nuestra misión estamos comprometidos con la mejora 
+						continua del servicio y el cumplimiento de los requisitos de las Normas ISO 9001 e ISO 
+						14001, y la prevención de la contaminación, aplicando estos principios a todas 
+						nuestras actividades y servicios.
+						Por ello la Dirección, se compromete a:
+						- Cumplir con requisitos legales y otros requisitos aplicables a nuestros productos y 
+						servicios, y a la gestión ambiental.
+						- Cumplir nuestro compromiso con la mejora continua tanto desde el punto de vista de 
+						la calidad como del ambiente de nuestros procesos y servicios.
+						- Cumplir con los requisitos emanados de nuestro Sistema de Gestión de la Calidad y 
+						Medio Ambiente.</p><br />
+			</div>
+		</div>
 	</div>
-	<footer id="foot"></footer>
+	<br /><br />
+	<footer></footer>
 <!-- ///////////////////////////////////// SCRIPTS //////////////////////////////////////////////////// -->	
 	<script type="text/javascript">
 		
@@ -120,38 +116,6 @@
                  // $("#itemInstitucional").css("background-color", "white");
                 });
 				
-				<!-- JQuery para form -->
-				
-			$("#enviar").click(verifica);	
-			
-			function verifica(){
-				
-				$('html, body').animate({
-					scrollTop: $("#foot").offset().top
-				}, 3000);
-				
-				$("#resultado").hide();
-				
-				var data = $("#formu").serializeArray();
-				
-				$.ajax({
-					type: 'post',
-					url: 'php_valida/valida_po.php',
-					data: data, 
-					beforeSend: function () {   
-										  $("#resultado").html("Procesando, espere por favor...");
-											},
-					success: function(msj){
-										   
-										   $("#resultado").attr("class","alert alert-warning");
-										   $("#resultado").slideToggle("slow",function(){ 
-																					$("#resultado").html(msj);																				
-																					});
-										   }
-										 
-				});
-			}
-			
 			
 		});
 		
@@ -174,31 +138,6 @@
             e.src='//www.google-analytics.com/analytics.js';
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','UA-XXXXX-X','auto');ga('send','pageview');
-        </script>
-		
-		 <!-- Google maps -->
-        <script src="http://maps.googleapis.com/maps/api/js"></script>
-        <script>
-            var myCenter= new google.maps.LatLng(-34.76962901102461, -58.473983799999985);
-            
-            function initialize() {
-                var mapProp = {
-                  center:myCenter,
-                  zoom: 14,
-                  mapTypeId: google.maps.MapTypeId.ROADMAP
-                };
-
-                var map=new google.maps.Map(document.getElementById("googleMap"), mapProp);
-
-                var marker=new google.maps.Marker({
-                  position:myCenter,
-                  });
-
-                marker.setMap(map);
-            }
-
-            // Carga el mapa
-            google.maps.event.addDomListener(window, 'load', initialize);
         </script>
 </body>
 </html>
