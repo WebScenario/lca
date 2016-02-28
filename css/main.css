@@ -59,8 +59,8 @@
 			color: #990000;
 		}
 
-	/*Menu con resolucion menor a 1080px*/
-	@media (max-width: 1080px){
+	/*Menu con resolucion menor a 1130px*/
+	@media (max-width: 1130px){
 		/* Cuando esta colapsado */
 		.navbar-brand img{
 			left: 0px;
@@ -118,8 +118,8 @@
 		}
 	}
 
-	/* Menu con resolucion de 1080px o superior */
-	@media (min-width: 1080px){
+	/* Menu con resolucion de 1130px o superior */
+	@media (min-width: 1130px){
 		.navbar-header{
 			width: 450px;
 		}
