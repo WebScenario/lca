@@ -95,8 +95,8 @@
         </script>
 
         <style type="text/css">
-            ul#demo-block{ margin:0 15px 15px 15px; }
-                ul#demo-block li{ margin:0 0 10px 0; padding:10px; display:inline; float:left; clear:both; color:#aaa; background:url('img/blurred_home.png'); font:11px Helvetica, Arial, sans-serif; }
+            /*ul#demo-block{ margin:0 15px 15px 15px; }*/
+                /*ul#demo-block li{ margin:0 0 10px 0; padding:10px; display:inline; float:left; clear:both; color:#aaa; background:url('img/blurred_home.png'); font:11px Helvetica, Arial, sans-serif; }*/
         </style>
 
         <!-- Fin galeria -->    
@@ -271,9 +271,9 @@
 
     <!-- Cuerpo de la galeria -->
     <div id="panel">
-        <ul id="demo-block">
+        <!-- <ul id="demo-block">
         <li></li>
-        </ul>  
+        </ul>   -->
         <!--End of styles-->
         
         <!--Thumbnail Navigation-->
@@ -367,7 +367,7 @@
                     $("#panel, #panel-block").slideToggle({
                         direction: "up"
                     }, 300);
-                    $
+                    $(".slide-link-0").click();
                 });
             });
         </script>
