@@ -203,22 +203,8 @@
 
 <!-- //////////////////////////////////// CONTENIDO /////////////////////////////////////////////////// -->
 
-    <!--<img src="images/video.jpg" alt="foto">-->
-	<div class="container" style="margin-top:150px;">
-		<div class="row row-centered">
-			<div class="col-xs-6 col-centered">
-				<button class="btn btn-success" id="apretar" name="apretar" data-toggle="modal" data-target="#miGaleria">Ver galeria</button>
-			</div>
-			<div class="col-xs-6 col-centered">
-				<div class="modal fade" id="miGaleria" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-					<div class="modal-dialog modal-lg">
-						<div class="modal-content"><!-- estos 3 siempre para crear un modal-->
-							<div class="modal-header">
-								 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-								<h4 class="modal-title">Galeria de fotos:</h4>
-							</div>
-							<div class="modal-body">
-								 <!-- Galeria -->
+    
+    <!-- Galeria -->
     <div id="jssor_1" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 800px; height: 456px; overflow: hidden; visibility: hidden; background-color: #24262e;">
         <!-- Loading Screen -->
         <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
@@ -293,15 +279,9 @@
         <span data-u="arrowright" class="jssora05r" style="top:158px;right:8px;width:40px;height:40px;"></span>
         <a href="http://www.jssor.com" style="display:none">Slideshow Maker</a>
     </div>
-							 </div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
 
-    <!-- <img src="images/video.jpg" alt="foto"> -->
+
+    <button type="button" id="apretar">Apretar</button>
 
 <!-- ///////////////////////////////////// SCRIPTS //////////////////////////////////////////////////// -->
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
