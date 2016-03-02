@@ -17,9 +17,177 @@
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/estilo_contacto.css">
 
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script> 
+
+        <!-- Inicio galeria -->
+        <link rel="stylesheet" href="css/supersized.css" type="text/css" media="screen" />
+        <link rel="stylesheet" href="theme/supersized.shutter.css" type="text/css" media="screen" />
+        
+        <script type="text/javascript" src="js/jquery.easing.min.js"></script>
+        
+        <script type="text/javascript" src="js/supersized.3.2.7.min.js"></script>
+        <script type="text/javascript" src="theme/supersized.shutter.min.js"></script>
+        
+        <script type="text/javascript">
+            
+            jQuery(function($){
+                
+                $.supersized({
+                
+                    // Functionality
+                    slideshow               :   1,          // Slideshow on/off
+                    autoplay                :   0,          // Slideshow starts playing automatically
+                    start_slide             :   1,          // Start slide (0 is random)
+                    stop_loop               :   0,          // Pauses slideshow on last slide
+                    random                  :   0,          // Randomize slide order (Ignores start slide)
+                    slide_interval          :   3000,       // Length between transitions
+                    transition              :   4,          // 0-None, 1-Fade, 2-Slide Top, 3-Slide Right, 4-Slide Bottom, 5-Slide Left, 6-Carousel Right, 7-Carousel Left
+                    transition_speed        :   1000,       // Speed of transition
+                    new_window              :   1,          // Image links open in new window/tab
+                    pause_hover             :   0,          // Pause slideshow on hover
+                    keyboard_nav            :   1,          // Keyboard navigation on/off
+                    performance             :   1,          // 0-Normal, 1-Hybrid speed/quality, 2-Optimizes image quality, 3-Optimizes transition speed // (Only works for Firefox/IE, not Webkit)
+                    image_protect           :   1,          // Disables image dragging and right click with Javascript
+                                                               
+                    // Size & Position                         
+                    min_width               :   0,          // Min width allowed (in pixels)
+                    min_height              :   0,          // Min height allowed (in pixels)
+                    vertical_center         :   1,          // Vertically center background
+                    horizontal_center       :   1,          // Horizontally center background
+                    fit_always              :   0,          // Image will never exceed browser width or height (Ignores min. dimensions)
+                    fit_portrait            :   1,          // Portrait images will not exceed browser height
+                    fit_landscape           :   0,          // Landscape images will not exceed browser width
+                                                               
+                    // Components                           
+                    slide_links             :   'blank',    // Individual links for each slide (Options: false, 'num', 'name', 'blank')
+                    thumb_links             :   1,          // Individual thumb links for each slide
+                    thumbnail_navigation    :   0,          // Thumbnail navigation
+                    slides                  :   [           // Slideshow Images
+                                                        {image : 'img/blurred_home.jpg', title : 'Image Credit: Maria Kazvan', thumb : 'http://buildinternet.s3.amazonaws.com/projects/supersized/3.2/thumbs/kazvan-1.jpg', url : 'http://www.nonsensesociety.com/2011/04/maria-kazvan/'},
+                                                        {image : 'http://buildinternet.s3.amazonaws.com/projects/supersized/3.2/slides/kazvan-1.jpg', title : 'Image Credit: Maria Kazvan', thumb : 'http://buildinternet.s3.amazonaws.com/projects/supersized/3.2/thumbs/kazvan-1.jpg', url : 'http://www.nonsensesociety.com/2011/04/maria-kazvan/'},
+                                                        {image : 'http://buildinternet.s3.amazonaws.com/projects/supersized/3.2/slides/kazvan-2.jpg', title : 'Image Credit: Maria Kazvan', thumb : 'http://buildinternet.s3.amazonaws.com/projects/supersized/3.2/thumbs/kazvan-2.jpg', url : 'http://www.nonsensesociety.com/2011/04/maria-kazvan/'},
+                                                        {image : 'http://buildinternet.s3.amazonaws.com/projects/supersized/3.2/slides/kazvan-3.jpg', title : 'Image Credit: Maria Kazvan', thumb : 'http://buildinternet.s3.amazonaws.com/projects/supersized/3.2/thumbs/kazvan-3.jpg', url : 'http://www.nonsensesociety.com/2011/04/maria-kazvan/'},
+                                                        {image : 'http://buildinternet.s3.amazonaws.com/projects/supersized/3.2/slides/wojno-1.jpg', title : 'Image Credit: Colin Wojno', thumb : 'http://buildinternet.s3.amazonaws.com/projects/supersized/3.2/thumbs/wojno-1.jpg', url : 'http://www.nonsensesociety.com/2011/03/colin/'},
+                                                        {image : 'http://buildinternet.s3.amazonaws.com/projects/supersized/3.2/slides/wojno-2.jpg', title : 'Image Credit: Colin Wojno', thumb : 'http://buildinternet.s3.amazonaws.com/projects/supersized/3.2/thumbs/wojno-2.jpg', url : 'http://www.nonsensesociety.com/2011/03/colin/'},
+                                                        {image : 'http://buildinternet.s3.amazonaws.com/projects/supersized/3.2/slides/wojno-3.jpg', title : 'Image Credit: Colin Wojno', thumb : 'http://buildinternet.s3.amazonaws.com/projects/supersized/3.2/thumbs/wojno-3.jpg', url : 'http://www.nonsensesociety.com/2011/03/colin/'},
+                                                        {image : 'http://buildinternet.s3.amazonaws.com/projects/supersized/3.2/slides/shaden-1.jpg', title : 'Image Credit: Brooke Shaden', thumb : 'http://buildinternet.s3.amazonaws.com/projects/supersized/3.2/thumbs/shaden-1.jpg', url : 'http://www.nonsensesociety.com/2011/06/brooke-shaden/'},
+                                                        {image : 'http://buildinternet.s3.amazonaws.com/projects/supersized/3.2/slides/shaden-2.jpg', title : 'Image Credit: Brooke Shaden', thumb : 'http://buildinternet.s3.amazonaws.com/projects/supersized/3.2/thumbs/shaden-2.jpg', url : 'http://www.nonsensesociety.com/2011/06/brooke-shaden/'},
+                                                        {image : 'http://buildinternet.s3.amazonaws.com/projects/supersized/3.2/slides/wojno-2.jpg', title : 'Image Credit: Colin Wojno', thumb : 'http://buildinternet.s3.amazonaws.com/projects/supersized/3.2/thumbs/wojno-2.jpg', url : 'http://www.nonsensesociety.com/2011/03/colin/'},
+                                                        {image : 'http://buildinternet.s3.amazonaws.com/projects/supersized/3.2/slides/wojno-3.jpg', title : 'Image Credit: Colin Wojno', thumb : 'http://buildinternet.s3.amazonaws.com/projects/supersized/3.2/thumbs/wojno-3.jpg', url : 'http://www.nonsensesociety.com/2011/03/colin/'},
+                                                        {image : 'http://buildinternet.s3.amazonaws.com/projects/supersized/3.2/slides/shaden-1.jpg', title : 'Image Credit: Brooke Shaden', thumb : 'http://buildinternet.s3.amazonaws.com/projects/supersized/3.2/thumbs/shaden-1.jpg', url : 'http://www.nonsensesociety.com/2011/06/brooke-shaden/'},
+                                                        {image : 'http://buildinternet.s3.amazonaws.com/projects/supersized/3.2/slides/shaden-2.jpg', title : 'Image Credit: Brooke Shaden', thumb : 'http://buildinternet.s3.amazonaws.com/projects/supersized/3.2/thumbs/shaden-2.jpg', url : 'http://www.nonsensesociety.com/2011/06/brooke-shaden/'},
+                                                        {image : 'http://buildinternet.s3.amazonaws.com/projects/supersized/3.2/slides/shaden-3.jpg', title : 'Image Credit: Brooke Shaden', thumb : 'http://buildinternet.s3.amazonaws.com/projects/supersized/3.2/thumbs/shaden-3.jpg', url : 'http://www.nonsensesociety.com/2011/06/brooke-shaden/'}
+                                                ],
+                                                
+                    // Theme Options               
+                    progress_bar            :   1,          // Timer for each slide                         
+                    mouse_scrub             :   0
+                    
+                });
+            });
+            
+        </script>
+
+        <style type="text/css">
+            /*ul#demo-block{ margin:0 15px 15px 15px; }*/
+                /*ul#demo-block li{ margin:0 0 10px 0; padding:10px; display:inline; float:left; clear:both; color:#aaa; background:url('img/blurred_home.png'); font:11px Helvetica, Arial, sans-serif; }*/
+        </style>
+
+        <!-- Fin galeria -->    
+
+    <style>
+    body {
+        overflow: hidden!important;
+    }
+    #panel-block {
+        width: 100%;
+        height: 100%;
+        position:absolute;
+        top:0;
+        z-index: 100;
+        display: block;        
+    }
+
+    #panel {
+        width: 100%;
+        height: 100%;
+        position:absolute;
+        bottom:0;
+        z-index: 100;
+        display: none;
+        /*background-color: #000000;*/
+    } 
+
+    /*html { 
+      background: url(../img/blurred_home.jpg) no-repeat center center fixed; 
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }*/
+    /*html{
+      background:url('../img/blurred_home.jpg') no-repeat center center;
+      min-height:100%;
+      background-size:cover;
+    }
+    body{
+      min-height:100%;
+    }*/
+
+    .bg-image {
+      z-index: -100;
+      min-height: 100%;
+      min-width: 1024px;
+      
+      width: 100%;
+      height: auto;
+      
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+
+    /*  .top-img {
+        min-height: 100%;
+        min-width: 1024px;
+        width: 100%;
+        height: auto;
+        position: relative;
+        top: 0px;
+        left: 0;
+    }*/
+
+    @media screen and (max-width: 1024px) {
+      .bg-image {
+        left: 50%;
+        margin-left: -512px;
+      }
+/*      #panel {
+        left: 50%;
+        margin-left: -512px;        
+      }
+      .top-img {
+        top: 60px!important;
+      }*/
+    }
+
+    .btn-gallery {
+      position: absolute;
+      top: 50%;
+      left:45%;
+      z-index: -99;
+    }
+}
+    </style>
+    
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -76,69 +244,88 @@
         </div>
     </nav>
 
+
+
+
+
+
+
+
+
 <!-- //////////////////////////////////// CONTENIDO /////////////////////////////////////////////////// -->
 
-    <!--<img src="images/video.jpg" alt="foto">-->
-	<div class="container" style="margin-top:150px;">
-		<div class="row row-centered">
-			<div class="col-xs-6 col-centered">
-				<button class="btn btn-success" id="galeria" name="galeria" data-toggle="modal" data-target="#miGaleria">Ver galeria</button>
-			</div>
-			<div class="col-xs-6 col-centered">
-				<div class="modal fade" id="miGaleria" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-					<div class="modal-dialog modal-lg">
-						<div class="modal-content"><!-- estos 3 siempre para crear un modal-->
-							<div class="modal-header">
-								 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-								<h4 class="modal-title">Galeria de fotos:</h4>
-							</div>
-							<div class="modal-body">
-								<div id="carousel-example-generic" class="carousel slide" data-ride="carousel" style="width:100%;height:500px;">
-								  <!-- Indicators -->
-								  <ol class="carousel-indicators">
-									<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-									<li data-target="#carousel-example-generic" data-slide-to="1"></li>
-									<li data-target="#carousel-example-generic" data-slide-to="2"></li>
-									<li data-target="#carousel-example-generic" data-slide-to="3"></li>
-								  </ol>
 
-								  <!-- Wrapper for slides -->
-								  <div class="carousel-inner" role="listbox">
-									<div class="item active">
-									  <img src="images/galeria/g1.jpg" style="width:100%;height:500px;" />
-									</div>
-									<div class="item">
-									   <img src="images/galeria/g2.jpg" style="width:100%;height:500px;" />
-									</div>
-									<div class="item">
-									   <img src="images/galeria/g3.jpg" style="width:100%;height:500px;" />
-									</div>
-									<div class="item">
-									   <img src="images/galeria/g4.jpg" style="width:100%;height:500px;" />
-									</div>
-								  </div>
+        <!-- <div id="panel"> -->
+            <!-- <img class="top-img" src="img/blurred_home.jpg" alt=""> -->
+        <!-- </div> -->
 
-								  <!-- Controls -->
-								  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-									<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-									<span class="sr-only">Previous</span>
-								  </a>
-								  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-									<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-									<span class="sr-only">Next</span>
-								  </a>
-								</div>
-							 </div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
 
-<!-- ///////////////////////////////////// SCRIPTS //////////////////////////////////////////////////// -->
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+    <!-- <button type="button" id="apretar">Apretar</button> -->
+
+
+
+
+    <div id="panel-block">
+    <!-- <img class="bg-image" src="img/blurred_home.jpg" alt=""> -->
+    <a id="flip" href="#" class="flip btn btn-primary btn-gallery" role="button">Ver galeria</a>        
+    </div>
+
+    <!-- Cuerpo de la galeria -->
+    <div id="panel">
+        <!-- <ul id="demo-block">
+        <li></li>
+        </ul>   -->
+        <!--End of styles-->
+        
+        <!--Thumbnail Navigation-->
+        <div class="close-awesome"><i class="flip fa fa-times fa-2x load-item"></i></div>
+
+        <div id="prevthumb"></div>
+        <div id="nextthumb"></div>
+        
+        <!--Arrow Navigation-->
+        <a id="prevslide" class="load-item"></a>
+        <a id="nextslide" class="load-item"></a>
+        
+        <div id="thumb-tray" class="load-item">
+            <div id="thumb-back"></div>
+            <div id="thumb-forward"></div>
+        </div>
+        
+        <!--Time Bar-->
+        <div id="progress-back" class="load-item">
+            <div id="progress-bar"></div>
+        </div>
+        
+        <!--Control Bar-->
+        <div id="controls-wrapper" class="load-item">
+            <div id="controls">
+                
+                <a id="play-button"><img id="pauseplay" src="img/pause.png"/></a>
+            
+                <!--Slide counter-->
+                <div id="slidecounter">
+                    <span class="slidenumber"></span> / <span class="totalslides"></span>
+                </div>
+                
+                <!--Slide captions displayed here-->
+                <div id="slidecaption"></div>
+                
+                <!--Thumb Tray button-->
+                <a id="tray-button"><img id="tray-arrow" src="img/button-tray-up.png"/></a>
+                
+                <!--Navigation-->
+                <ul id="slide-list"></ul>
+                
+            </div>
+        </div>
+    </div>
+
+
+<!-- Default Scripts -->
+        <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>-->
+        <!--<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>-->
 
         <script src="js/vendor/bootstrap.min.js"></script>
 
@@ -155,14 +342,16 @@
             ga('create','UA-XXXXX-X','auto');ga('send','pageview');
         </script>
 
-<!-- ///////////////////////////////////////////////////////////////////////////////////////////// -->
-         <!-- JQuery para submenu -->
+<!-- Custom Scripts -->
+         <!-- Submenu -->
         <script>
             $(document).ready(function(){
                 $("#itemInstitucional").click(function(){
                     $("#subMenu").slideToggle();
                 });
+
             });
         </script>
+
     </body>
 </html>
