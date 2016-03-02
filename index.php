@@ -17,6 +17,7 @@
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 
@@ -26,6 +27,11 @@
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script> 
+
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script> 
+
 
         <!-- Inicio galeria -->
         <link rel="stylesheet" href="css/supersized.css" type="text/css" media="screen" />
@@ -188,6 +194,7 @@
 }
     </style>
     
+
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -255,16 +262,6 @@
 <!-- //////////////////////////////////// CONTENIDO /////////////////////////////////////////////////// -->
 
 
-        <!-- <div id="panel"> -->
-            <!-- <img class="top-img" src="img/blurred_home.jpg" alt=""> -->
-        <!-- </div> -->
-
-
-
-    <!-- <button type="button" id="apretar">Apretar</button> -->
-
-
-
 
     <div id="panel-block">
     <!-- <img class="bg-image" src="img/blurred_home.jpg" alt=""> -->
@@ -322,7 +319,6 @@
         </div>
     </div>
 
-
 <!-- Default Scripts -->
         <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>-->
         <!--<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>-->
@@ -350,6 +346,19 @@
                     $("#subMenu").slideToggle();
                 });
 
+            });
+        </script>
+
+        <!-- Gallery -->
+        <script>
+            $(document).ready(function(){
+
+                $(".flip").click(function(){
+                    $("#panel, #panel-block").slideToggle({
+                        direction: "up"
+                    }, 300);
+                    $(".slide-link-0").click();
+                });
             });
         </script>
 
