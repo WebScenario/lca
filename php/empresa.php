@@ -87,7 +87,7 @@
 	<div class="container" style="margin-top:80px;">
 		<!-- Ruta de secciones -->
         <div class="row">
-            <div class="col-xs-12 col-sm-4">
+            <div class="col-xs-12 col-sm-12">
                 <ol class="breadcrumb">
                     <li><a href="../index.php">Inicio</a></li>
                     <li class="active">Institucional</li>
