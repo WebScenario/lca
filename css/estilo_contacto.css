@@ -15,8 +15,44 @@
 //////////////////////////////////////////////
 /* Ocultamos el div del form: resultados */
 #resultado{
-			display: none;
-		}
-.container{
-	width:50%;
+	display: none;
+}
+
+#recuadroMapa{
+    position: relative;
+}
+    #googleMap{
+        width:500px;
+        height:300px;
+    }
+    #recuadroMapa h3{
+        font-size: 25px;
+        color: #a6a6a6;
+    }
+
+h2{
+    position: relative;
+    top: 50px;
+    color: #990000;
+    font-size: 30px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+form{
+    position: relative;
+    top: 70px;
+}
+
+@media (max-width: 768px) {
+    #recuadroMapa{
+    position: relative;
+    margin-top: 100px;
+}
+    #googleMap{
+        width:330px;
+        height:300px;
+    }
+    #recuadroMapa h3{
+        margin-top: 10px;
+    }
 }

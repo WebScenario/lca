@@ -18,6 +18,11 @@
         <link rel="stylesheet" href="../css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="../css/main.css">
 
+        <!-- Fuente del menu principal, logo -->
+        <link href='https://fonts.googleapis.com/css?family=Maven+Pro' rel='stylesheet' type='text/css'>
+
+        <link rel="stylesheet" href="../css/institucional.css">
+
         <script src="../js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
         
 		<script type="text/javascript" src="js_functions/jquery.js"></script>
@@ -92,24 +97,27 @@
 
 		<div class="row">
 			<div class="col-md-12">
-					<h3>Políticas</h3><hr />
-					<p>Fábrica de Carrocerías Los Cuatro Ases S.A. dedicada a la fabricación y reparación de 
-						carrocerías,  es una empresa con muchos años de experiencia y responsabilidad en el 
-						mercado del transporte de carga, en el cual ha logrado un sólido posicionamiento de la 
-						marca “Los Cuatro Ases”. 
-						Nuestra misión es producir y comercializar, de manera sustentable, carrocerías que 
-						respondan a las necesidades del transportista, combinando eficiencia y calidad. 
-						Para lograr el propósito de nuestra misión estamos comprometidos con la mejora 
-						continua del servicio y el cumplimiento de los requisitos de las Normas ISO 9001 e ISO 
-						14001, y la prevención de la contaminación, aplicando estos principios a todas 
-						nuestras actividades y servicios.
-						Por ello la Dirección, se compromete a:
-						- Cumplir con requisitos legales y otros requisitos aplicables a nuestros productos y 
-						servicios, y a la gestión ambiental.
-						- Cumplir nuestro compromiso con la mejora continua tanto desde el punto de vista de 
-						la calidad como del ambiente de nuestros procesos y servicios.
-						- Cumplir con los requisitos emanados de nuestro Sistema de Gestión de la Calidad y 
-						Medio Ambiente.</p><br />
+				<div class="page-header">
+                    <h3>Políticas</h3>
+                </div>
+				<p>Fábrica de Carrocerías Los Cuatro Ases S.A. dedicada a la fabricación y reparación de 
+					carrocerías,  es una empresa con muchos años de experiencia y responsabilidad en el 
+					mercado del transporte de carga, en el cual ha logrado un sólido posicionamiento de la 
+					marca “Los Cuatro Ases”. 
+					Nuestra misión es producir y comercializar, de manera sustentable, carrocerías que 
+					respondan a las necesidades del transportista, combinando eficiencia y calidad. 
+					Para lograr el propósito de nuestra misión estamos comprometidos con la mejora 
+					continua del servicio y el cumplimiento de los requisitos de las Normas ISO 9001 e ISO 
+					14001, y la prevención de la contaminación, aplicando estos principios a todas 
+					nuestras actividades y servicios.
+					Por ello la Dirección, se compromete a:
+					- Cumplir con requisitos legales y otros requisitos aplicables a nuestros productos y 
+					servicios, y a la gestión ambiental.
+					- Cumplir nuestro compromiso con la mejora continua tanto desde el punto de vista de 
+					la calidad como del ambiente de nuestros procesos y servicios.
+					- Cumplir con los requisitos emanados de nuestro Sistema de Gestión de la Calidad y 
+					Medio Ambiente.
+                </p>
 			</div>
 		</div>
 	</div>

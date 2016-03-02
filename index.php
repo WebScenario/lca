@@ -17,6 +17,12 @@
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="css/main.css">
+
+        <link rel="stylesheet" href="css/index.css"> <!-- CSS individual -->
+        
+        <!-- Fuente del menu principal, logo -->
+        <link href='https://fonts.googleapis.com/css?family=Maven+Pro' rel='stylesheet' type='text/css'>
+
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
@@ -77,20 +83,10 @@
                     thumb_links             :   1,          // Individual thumb links for each slide
                     thumbnail_navigation    :   0,          // Thumbnail navigation
                     slides                  :   [           // Slideshow Images
-                                                        {image : 'img/blurred_home.jpg', title : 'Image Credit: Maria Kazvan', thumb : 'http://buildinternet.s3.amazonaws.com/projects/supersized/3.2/thumbs/kazvan-1.jpg', url : 'http://www.nonsensesociety.com/2011/04/maria-kazvan/'},
-                                                        {image : 'http://buildinternet.s3.amazonaws.com/projects/supersized/3.2/slides/kazvan-1.jpg', title : 'Image Credit: Maria Kazvan', thumb : 'http://buildinternet.s3.amazonaws.com/projects/supersized/3.2/thumbs/kazvan-1.jpg', url : 'http://www.nonsensesociety.com/2011/04/maria-kazvan/'},
-                                                        {image : 'http://buildinternet.s3.amazonaws.com/projects/supersized/3.2/slides/kazvan-2.jpg', title : 'Image Credit: Maria Kazvan', thumb : 'http://buildinternet.s3.amazonaws.com/projects/supersized/3.2/thumbs/kazvan-2.jpg', url : 'http://www.nonsensesociety.com/2011/04/maria-kazvan/'},
-                                                        {image : 'http://buildinternet.s3.amazonaws.com/projects/supersized/3.2/slides/kazvan-3.jpg', title : 'Image Credit: Maria Kazvan', thumb : 'http://buildinternet.s3.amazonaws.com/projects/supersized/3.2/thumbs/kazvan-3.jpg', url : 'http://www.nonsensesociety.com/2011/04/maria-kazvan/'},
-                                                        {image : 'http://buildinternet.s3.amazonaws.com/projects/supersized/3.2/slides/wojno-1.jpg', title : 'Image Credit: Colin Wojno', thumb : 'http://buildinternet.s3.amazonaws.com/projects/supersized/3.2/thumbs/wojno-1.jpg', url : 'http://www.nonsensesociety.com/2011/03/colin/'},
-                                                        {image : 'http://buildinternet.s3.amazonaws.com/projects/supersized/3.2/slides/wojno-2.jpg', title : 'Image Credit: Colin Wojno', thumb : 'http://buildinternet.s3.amazonaws.com/projects/supersized/3.2/thumbs/wojno-2.jpg', url : 'http://www.nonsensesociety.com/2011/03/colin/'},
-                                                        {image : 'http://buildinternet.s3.amazonaws.com/projects/supersized/3.2/slides/wojno-3.jpg', title : 'Image Credit: Colin Wojno', thumb : 'http://buildinternet.s3.amazonaws.com/projects/supersized/3.2/thumbs/wojno-3.jpg', url : 'http://www.nonsensesociety.com/2011/03/colin/'},
-                                                        {image : 'http://buildinternet.s3.amazonaws.com/projects/supersized/3.2/slides/shaden-1.jpg', title : 'Image Credit: Brooke Shaden', thumb : 'http://buildinternet.s3.amazonaws.com/projects/supersized/3.2/thumbs/shaden-1.jpg', url : 'http://www.nonsensesociety.com/2011/06/brooke-shaden/'},
-                                                        {image : 'http://buildinternet.s3.amazonaws.com/projects/supersized/3.2/slides/shaden-2.jpg', title : 'Image Credit: Brooke Shaden', thumb : 'http://buildinternet.s3.amazonaws.com/projects/supersized/3.2/thumbs/shaden-2.jpg', url : 'http://www.nonsensesociety.com/2011/06/brooke-shaden/'},
-                                                        {image : 'http://buildinternet.s3.amazonaws.com/projects/supersized/3.2/slides/wojno-2.jpg', title : 'Image Credit: Colin Wojno', thumb : 'http://buildinternet.s3.amazonaws.com/projects/supersized/3.2/thumbs/wojno-2.jpg', url : 'http://www.nonsensesociety.com/2011/03/colin/'},
-                                                        {image : 'http://buildinternet.s3.amazonaws.com/projects/supersized/3.2/slides/wojno-3.jpg', title : 'Image Credit: Colin Wojno', thumb : 'http://buildinternet.s3.amazonaws.com/projects/supersized/3.2/thumbs/wojno-3.jpg', url : 'http://www.nonsensesociety.com/2011/03/colin/'},
-                                                        {image : 'http://buildinternet.s3.amazonaws.com/projects/supersized/3.2/slides/shaden-1.jpg', title : 'Image Credit: Brooke Shaden', thumb : 'http://buildinternet.s3.amazonaws.com/projects/supersized/3.2/thumbs/shaden-1.jpg', url : 'http://www.nonsensesociety.com/2011/06/brooke-shaden/'},
-                                                        {image : 'http://buildinternet.s3.amazonaws.com/projects/supersized/3.2/slides/shaden-2.jpg', title : 'Image Credit: Brooke Shaden', thumb : 'http://buildinternet.s3.amazonaws.com/projects/supersized/3.2/thumbs/shaden-2.jpg', url : 'http://www.nonsensesociety.com/2011/06/brooke-shaden/'},
-                                                        {image : 'http://buildinternet.s3.amazonaws.com/projects/supersized/3.2/slides/shaden-3.jpg', title : 'Image Credit: Brooke Shaden', thumb : 'http://buildinternet.s3.amazonaws.com/projects/supersized/3.2/thumbs/shaden-3.jpg', url : 'http://www.nonsensesociety.com/2011/06/brooke-shaden/'}
+                                                        {image : 'images/galeria/blurred_home.jpg', title : 'Carroceria 1', thumb : 'images/galeria/blurred_home.jpg', url : 'http://www.nonsensesociety.com/2011/04/maria-kazvan/'},
+                                                        {image : 'images/galeria/g2.jpg', title : 'Carroceria 2', thumb : 'images/galeria/g2.jpg', url : 'http://www.nonsensesociety.com/2011/04/maria-kazvan/'},
+                                                        {image : 'images/galeria/g3.JPG', title : 'Carroceria 3', thumb : 'images/galeria/g3.JPG', url : 'http://www.nonsensesociety.com/2011/04/maria-kazvan/'},
+                                                        {image : 'images/galeria/g4.jpg', title : 'Carroceria 4', thumb : 'images/galeria/g4.jpg', url : 'http://www.nonsensesociety.com/2011/04/maria-kazvan/'}
                                                 ],
                                                 
                     // Theme Options               
@@ -260,18 +256,25 @@
 
 
 <!-- //////////////////////////////////// CONTENIDO /////////////////////////////////////////////////// -->
-
-		<div id="panel-block">
-				<div style="position: absolute; width: 50%; height: 50%; left: 25%; top: 25%;">
-					<h2 style="color:red;text-align:center;">Carrocerias Los Cuatro Ases</h2>
-					<h3 style="color:red;text-align:center;">"Un triunfo en carrocerias"</h3>
-				</div>
-		</div>
-
-		<div id="panel-block">
-				<!-- <img class="bg-image" src="img/blurred_home.jpg" alt=""> -->
-				<a id="flip" href="#" class="flip btn btn-primary btn-gallery" role="button">Ver galeria</a>
-		</div>
+        
+        <div id="panel-block">
+            <img class="img-responsive" src="images/optimised_logo_principal.png" alt="logoLosCuatroAses">
+        </div>
+        
+        <div class="row">
+            <div id="panel-block" class="text-center col-xs-12 col-sm-6 col-xs-push-3 col-sm-push-3">
+                <div id="divTextos">
+                    <p>Los Cuatro Ases S.A.</p>
+                    <p>F&aacute;brica de Carrocer&iacute;as</p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="row">
+            <div id="panel-block" class="">
+                <a id="flip" href="#" class="flip btn btn-gallery" role="button">VER GALERIA</a>
+            </div>
+        </div>
 
 
     <!-- Cuerpo de la galeria -->

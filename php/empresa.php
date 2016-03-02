@@ -18,6 +18,11 @@
         <link rel="stylesheet" href="../css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="../css/main.css">
 
+        <!-- Fuente del menu principal, logo -->
+        <link href='https://fonts.googleapis.com/css?family=Maven+Pro' rel='stylesheet' type='text/css'>
+
+        <link rel="stylesheet" href="../css/institucional.css">
+
         <script src="../js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
         
 		<script type="text/javascript" src="js_functions/jquery.js"></script>
@@ -93,26 +98,27 @@
 
         <div class="row">
 			<div class="col-md-12">
-					<div class="page-header">
-                        <h3>La Empresa</h3>
-                    </div>
-					<p>Historia: 
-						Fabrica de Carrocerías Los Cuatro Ases S.R.L. fue fundada en 1968 por cuatro 
-						hombres, profundos conocedores del transporte de carga – dos transportistas y dos 
-						carroceros – quienes uniendo esfuerzos y experiencia  fueron desarrollando las mejoras 
-						que requería el mercado, utilizando siempre materias primas e insumos de alta calidad y 
-						resistencia. 
-						En 1979, con la marca Los Cuatro Ases ya posicionada en el mercado, se constituye 
-						Fábrica de Carrocerías Los Cuatro Ases S.A. 
-						En 1992, al desvincularse  dos de los socios fundadores,   la empresa se convierte en 
-						una pyme familiar.  La dirección junto a  un plantel de obreros y empleados altamente 
-						capacitados conforman una organización  flexible, de estructura simple y dinámica que 
-						permite rápida adaptación a los cambios.
-						Hoy el paradigma gira hacia una  producción  sustentable, libre de impacto ambiental. 
-						Una vez más, a la vanguardia de los tiempos, hemos tomado el desafío integrando 
-						nuestro sistema de gestión de manera de garantizar tanto la calidad de nuestros 
-						procesos como nuestro compromiso
-						ISO 9001: 2008 e ISO 14001:2004.</p><br />
+				<div class="page-header">
+                    <h3>La Empresa</h3>
+                </div>
+				<p>Historia: 
+					Fabrica de Carrocerías Los Cuatro Ases S.R.L. fue fundada en 1968 por cuatro 
+					hombres, profundos conocedores del transporte de carga – dos transportistas y dos 
+					carroceros – quienes uniendo esfuerzos y experiencia  fueron desarrollando las mejoras 
+					que requería el mercado, utilizando siempre materias primas e insumos de alta calidad y 
+					resistencia. 
+					En 1979, con la marca Los Cuatro Ases ya posicionada en el mercado, se constituye 
+					Fábrica de Carrocerías Los Cuatro Ases S.A. 
+					En 1992, al desvincularse  dos de los socios fundadores,   la empresa se convierte en 
+					una pyme familiar.  La dirección junto a  un plantel de obreros y empleados altamente 
+					capacitados conforman una organización  flexible, de estructura simple y dinámica que 
+					permite rápida adaptación a los cambios.
+					Hoy el paradigma gira hacia una  producción  sustentable, libre de impacto ambiental. 
+					Una vez más, a la vanguardia de los tiempos, hemos tomado el desafío integrando 
+					nuestro sistema de gestión de manera de garantizar tanto la calidad de nuestros 
+					procesos como nuestro compromiso
+					ISO 9001: 2008 e ISO 14001:2004.
+                </p>
 			</div>	
 		</div>
 	</div>

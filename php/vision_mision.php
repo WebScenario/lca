@@ -18,6 +18,11 @@
         <link rel="stylesheet" href="../css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="../css/main.css">
 
+        <!-- Fuente del menu principal, logo -->
+        <link href='https://fonts.googleapis.com/css?family=Maven+Pro' rel='stylesheet' type='text/css'>
+
+        <link rel="stylesheet" href="../css/institucional.css">
+
         <script src="../js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
         
 		<script type="text/javascript" src="js_functions/jquery.js"></script>
@@ -92,14 +97,17 @@
 
 		<div class="row">
 			<div class="col-md-12">
-					<h3>Visión y misión</h3><br />
-					<p>Misión y Visión.
-						Nuestra misión es:
-	    				“Producir y comercializar, de manera sustentable, carrocerías 
-						 que respondan a las necesidades del transportista, combinando eficiencia y calidad.”
-						Nuestra visión:
-						“Permanecer en el mercado como la marca más reconocida por 
-						su calidad, servicio, y trayectoria”</p><br />
+				<div class="page-header">
+                    <h3>Visión y misión</h3>
+                </div>
+				<p>Misión y Visión.
+					Nuestra misión es:
+    				“Producir y comercializar, de manera sustentable, carrocerías 
+					 que respondan a las necesidades del transportista, combinando eficiencia y calidad.”
+					Nuestra visión:
+					“Permanecer en el mercado como la marca más reconocida por 
+					su calidad, servicio, y trayectoria”
+                </p>
 			</div>
 		</div>
 	</div>
