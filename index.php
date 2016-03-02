@@ -261,12 +261,18 @@
 
 <!-- //////////////////////////////////// CONTENIDO /////////////////////////////////////////////////// -->
 
+		<div id="panel-block">
+				<div style="position: absolute; width: 50%; height: 50%; left: 25%; top: 25%;">
+					<h2 style="color:red;text-align:center;">Carrocerias Los Cuatro Ases</h2>
+					<h3 style="color:red;text-align:center;">"Un triunfo en carrocerias"</h3>
+				</div>
+		</div>
 
+		<div id="panel-block">
+				<!-- <img class="bg-image" src="img/blurred_home.jpg" alt=""> -->
+				<a id="flip" href="#" class="flip btn btn-primary btn-gallery" role="button">Ver galeria</a>
+		</div>
 
-    <div id="panel-block">
-    <!-- <img class="bg-image" src="img/blurred_home.jpg" alt=""> -->
-    <a id="flip" href="#" class="flip btn btn-primary btn-gallery" role="button">Ver galeria</a>        
-    </div>
 
     <!-- Cuerpo de la galeria -->
     <div id="panel">
