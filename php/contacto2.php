@@ -32,7 +32,7 @@
     <!-- Menu principal -->
     <nav class="navbar navbar-default navbar-fixed-top">
         <div id="menuPrincipal" class="container-fluid">
-            <div class="navbar-header" maedia="min-witdh:1080px">
+            <div class="navbar-header" maedia="min-witdh:768px">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-1">
                     <span class="sr-only">Menu</span>
                     <span class="icon-bar"></span>
@@ -41,7 +41,7 @@
                 </button>
 
                 <a class="navbar-brand" href="../index.php">
-                    <img alt="logo" src="../images/logo.ico" class="img-responsive">
+                    <img alt="logo" src="../images/svg_chico_opt.svg" class="img-responsive">
                     <span>LOS CUATRO ASES</span>
                 </a>
             </div>
