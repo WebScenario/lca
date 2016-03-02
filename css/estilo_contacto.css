@@ -24,15 +24,18 @@
     #googleMap{
         width:500px;
         height:300px;
+        margin-top: 25px;
     }
     #recuadroMapa h3{
         font-size: 25px;
         color: #a6a6a6;
+        margin-top: -25px;
     }
 
 h2{
     position: relative;
-    top: 50px;
+    top: 55px;
+    margin-left: -15px;
     color: #990000;
     font-size: 30px;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -52,7 +55,8 @@ form{
         width:330px;
         height:300px;
     }
-/*    #recuadroMapa h3{
-        margin-top: 10px;
-    }*/
-}
+    
+    #recuadroMapa{
+        position: relative;
+        margin-top: 120px;
+    }
