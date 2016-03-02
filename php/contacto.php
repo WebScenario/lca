@@ -21,10 +21,11 @@
 
         <script src="../js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
         
-
+		<script type="text/javascript" src="js_functions/jquery.js"></script>
+		
     </head>
-    <body>
-        <!--[if lt IE 8]>
+<body style="position: relative;" data-spy="scroll" data-target="#enviar">
+	 <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
     
@@ -79,40 +80,84 @@
     </nav>
 
 <!-- //////////////////////////////////// CONTENIDO /////////////////////////////////////////////////// -->
-    <!-- Mapa de google maps -->
-	<!--<div id="googleMap" style="width:100%;height:400px;"></div>-->
+	<!-- Mapa de google maps -->
+	<div id="googleMap" style="width:100%;height:400px;"></div>
 	
-    <!-- Formulario de contacto -->
-	<div class="container" style="margin-top:100px;width:50%;">
+	<div class="container" style="margin-top:10px;width:50%;">
 					  <h2>Formulario de Contacto</h2>
 					  <hr />
-						  <form role="form" method="post" id="formu" name="formu">
-						  
-						   <div class="form-group">
-							   <label for="email">Email:</label>
-							   <input type="email" class="form-control" id="email" name="email" placeholder="Ingresar email">
-						   </div>
-								
-						   <div class="form-group">
-						   	   <label for="asunto">Asunto:</label>
-						   	   <input type="text" class="form-control" id="asunto"name="asunto" placeholder="Ingresar asutno">
-						   </div>
-								
-						   <div class="form-group">
+						<form  role="form" id="formu" name="formu" method="post" >
+							
+							<div class="form-group">
+								<label for="email">Email:</label>
+									<input type="email" class="form-control" id="email" name="email" placeholder="Ingrese su email"/>
+							</div>
+							
+							<div class="form-group">
+								<label for="asunto">Asunto:</label>
+									<input type="text" class="form-control" id="asunto" name="asunto" placeholder="Ingrese su asunto"/>
+							</div>
+							
+							<div class="form-group">
 								<label for="commentario">Mensaje:</label>
-								<textarea class="form-control" rows="5" id="commentario" name="msj" placeholder="Ingresar mensaje"></textarea>
-						   </div>
-								
-							<button type="submit" class="btn btn-success" id="enviar" name="enviar">Enviar</button>
-					 </form><br />
-						  
-					 <div id="resultado" name="resultado">
-					</div><br /><br />
+									<textarea class="form-control" id="msj" name="msj" rows="5" placeholder="Ingrese su mensaje"></textarea>
+							</div>
+							
+							<input class="btn btn-success" type="button" value="Enviar mensaje" id="enviar" name="enviar"/>
+						</form>
+						
+						<br />
+						<div id="resultado"></div>
 	</div>
-    
-
-<!-- ///////////////////////////////////// SCRIPTS //////////////////////////////////////////////////// -->
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<footer id="foot"></footer>
+<!-- ///////////////////////////////////// SCRIPTS //////////////////////////////////////////////////// -->	
+	<script type="text/javascript">
+		
+		$(document).ready(function(){
+		 <!-- JQuery para submenu -->
+				$("#itemInstitucional").click(function(){
+                    $("#subMenu").slideToggle();
+                 // $("#itemInstitucional").css("background-color", "white");
+                });
+				
+				<!-- JQuery para form -->
+				
+			$("#enviar").click(verifica);	
+			
+			function verifica(){
+				
+				$('html, body').animate({
+					scrollTop: $("#foot").offset().top
+				}, 3000);
+				
+				$("#resultado").hide();
+				
+				var data = $("#formu").serializeArray();
+				
+				$.ajax({
+					type: 'post',
+					url: 'php_valida/valida_po.php',
+					data: data, 
+					beforeSend: function () {   
+										  $("#resultado").html("Procesando, espere por favor...");
+											},
+					success: function(msj){
+										   
+										   $("#resultado").attr("class","alert alert-warning");
+										   $("#resultado").slideToggle("slow",function(){ 
+																					$("#resultado").html(msj);																				
+																					});
+										   }
+										 
+				});
+			}
+			
+			
+		});
+		
+	</script>
+<!-- ///////////////////////////////////////////////////////////////////////////////////////////// -->
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="../js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 
         <script src="../js/vendor/bootstrap.min.js"></script>
@@ -120,9 +165,8 @@
         <script src="../js/plugins.js"></script>
         <script src="../js/main.js"></script>
 		
-		<!--<script src="../js/valida_form.js"></script>-->
 
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. 
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
             function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
@@ -130,47 +174,9 @@
             e.src='//www.google-analytics.com/analytics.js';
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','UA-XXXXX-X','auto');ga('send','pageview');
-        </script>-->
-
-<!-- ///////////////////////////////////////////////////////////////////////////////////////////// -->
-        <!-- JQuery -->
-        <script type="text/javascript">
-            $(document).ready(function(){
-			
-                <!-- JQuery para submenu -->
-				$("#itemInstitucional").click(function(){
-                    $("#subMenu").slideToggle();
-                 // $("#itemInstitucional").css("background-color", "white");
-                });
-				
-				<!-- JQuery para form -->
-					
-				
-				$("#enviar").click(verifica);	
-				
-				function verifica(){
-						
-						var data = $("#formu").serializeArray();
-							
-						$.ajax({
-								type: 'post',
-								url: 'php_valida/valida_po.php',
-								data: data, 
-								beforeSend: function () {    
-													   $("#resultado").html("Procesando, espere por favor...");
-													   $("#resultado").show();
-														},
-								success: function(msj){
-													   $("#resultado").html(msj);
-													   $("#resultado").show();
-													   }
-													 
-							});
-				}
-            });
         </script>
-        
-        <!-- Google maps 
+		
+		 <!-- Google maps -->
         <script src="http://maps.googleapis.com/maps/api/js"></script>
         <script>
             var myCenter= new google.maps.LatLng(-34.76962901102461, -58.473983799999985);
@@ -193,6 +199,6 @@
 
             // Carga el mapa
             google.maps.event.addDomListener(window, 'load', initialize);
-        </script>-->
-    </body>
+        </script>
+</body>
 </html>

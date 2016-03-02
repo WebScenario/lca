@@ -17,7 +17,6 @@
         <link rel="stylesheet" href="../css/bootstrap.min.css">
         <link rel="stylesheet" href="../css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="../css/main.css">
-        <link rel="stylesheet" href="../css/estilo_contacto.css">
 
         <script src="../js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
         
@@ -62,7 +61,7 @@
                         </ul>
                     </li>
                     
-                    <li class="liPadre"><a href="contacto2.php">CONTACTO</a></li>
+                    <li class="liPadre"><a href="contacto.php">CONTACTO</a></li>
                 </ul>
             </div>
         </div>
@@ -80,10 +79,23 @@
     </nav>
 
 <!-- //////////////////////////////////// CONTENIDO /////////////////////////////////////////////////// -->
-	<div class="container" style="margin-top:150px;width:50%;">
-		<div class="row">
+	<div class="container" style="margin-top:80px;">
+		<!-- Ruta de secciones -->
+        <div class="row">
+            <div class="col-xs-12 col-sm-4">
+                <ol class="breadcrumb">
+                    <li><a href="../index.php">Inicio</a></li>
+                    <li class="active">Institucional</li>
+                    <li class="active">La empresa</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="row">
 			<div class="col-md-12">
-					<h3>La Empresa</h3><hr />
+					<div class="page-header">
+                        <h3>La Empresa</h3>
+                    </div>
 					<p>Historia: 
 						Fabrica de Carrocerías Los Cuatro Ases S.R.L. fue fundada en 1968 por cuatro 
 						hombres, profundos conocedores del transporte de carga – dos transportistas y dos 
@@ -104,8 +116,10 @@
 			</div>	
 		</div>
 	</div>
-	<br /><br />
-	<footer></footer>
+
+	<footer>
+        
+    </footer>
 <!-- ///////////////////////////////////// SCRIPTS //////////////////////////////////////////////////// -->	
 	<script type="text/javascript">
 		

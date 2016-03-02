@@ -225,7 +225,7 @@
                         </ul>
                     </li>
                     
-                    <li class="liPadre"><a href="php/contacto2.php">CONTACTO</a></li>
+                    <li class="liPadre"><a href="php/contacto.php">CONTACTO</a></li>
                 </ul>
             </div>
         </div>
