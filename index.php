@@ -363,10 +363,18 @@
             $(document).ready(function(){
 
                 $(".flip").click(function(){
+                    if($('li.slide-link-0').hasClass('current-slide') && $("div.close-awesome").is(":hidden")) {
+                        $(".slide-link-1").click();    
+                    } else {
+                        $(".slide-link-0").click();    
+                    }
+
                     $("#panel, #panel-block").slideToggle({
                         direction: "up"
                     }, 300);
-                    $(".slide-link-0").click();
+                    
+                    
+                    
                 });
             });
         </script>
