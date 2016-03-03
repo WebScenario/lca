@@ -17,7 +17,11 @@
         <link rel="stylesheet" href="../css/bootstrap.min.css">
         <link rel="stylesheet" href="../css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="../css/main.css">
-        <link rel="stylesheet" href="../css/estilo_contacto.css">
+
+        <!-- Fuente del menu principal, logo -->
+        <link href='https://fonts.googleapis.com/css?family=Maven+Pro' rel='stylesheet' type='text/css'>
+
+        <link rel="stylesheet" href="../css/institucional.css">
 
         <script src="../js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
         
@@ -32,7 +36,7 @@
     <!-- Menu principal -->
     <nav class="navbar navbar-default navbar-fixed-top">
         <div id="menuPrincipal" class="container-fluid">
-            <div class="navbar-header" maedia="min-witdh:1080px">
+            <div class="navbar-header" maedia="min-witdh:768px">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-1">
                     <span class="sr-only">Menu</span>
                     <span class="icon-bar"></span>
@@ -41,7 +45,7 @@
                 </button>
 
                 <a class="navbar-brand" href="../index.php">
-                    <img alt="logo" src="../images/logo.ico" class="img-responsive">
+                    <img alt="logo" src="../images/svg_chico_opt.svg" class="img-responsive">
                     <span>LOS CUATRO ASES</span>
                 </a>
             </div>
@@ -62,7 +66,7 @@
                         </ul>
                     </li>
                     
-                    <li class="liPadre"><a href="contacto2.php">CONTACTO</a></li>
+                    <li class="liPadre"><a href="contacto.php">CONTACTO</a></li>
                 </ul>
             </div>
         </div>
@@ -80,32 +84,48 @@
     </nav>
 
 <!-- //////////////////////////////////// CONTENIDO /////////////////////////////////////////////////// -->
-	<div class="container" style="margin-top:150px;width:50%;">
-		<div class="row">
+	<div class="container" style="margin-top:80px;">
+		<!-- Ruta de secciones -->
+        <div class="row">
+            <div class="col-xs-12 col-sm-12">
+                <ol class="breadcrumb">
+                    <li><a href="../index.php">Inicio</a></li>
+                    <li class="active">Institucional</li>
+                    <li class="active">La empresa</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="row">
 			<div class="col-md-12">
-					<h3>La Empresa</h3><hr />
-					<p>Historia: 
-						Fabrica de Carrocerías Los Cuatro Ases S.R.L. fue fundada en 1968 por cuatro 
-						hombres, profundos conocedores del transporte de carga – dos transportistas y dos 
-						carroceros – quienes uniendo esfuerzos y experiencia  fueron desarrollando las mejoras 
-						que requería el mercado, utilizando siempre materias primas e insumos de alta calidad y 
-						resistencia. 
-						En 1979, con la marca Los Cuatro Ases ya posicionada en el mercado, se constituye 
-						Fábrica de Carrocerías Los Cuatro Ases S.A. 
-						En 1992, al desvincularse  dos de los socios fundadores,   la empresa se convierte en 
-						una pyme familiar.  La dirección junto a  un plantel de obreros y empleados altamente 
-						capacitados conforman una organización  flexible, de estructura simple y dinámica que 
-						permite rápida adaptación a los cambios.
-						Hoy el paradigma gira hacia una  producción  sustentable, libre de impacto ambiental. 
-						Una vez más, a la vanguardia de los tiempos, hemos tomado el desafío integrando 
-						nuestro sistema de gestión de manera de garantizar tanto la calidad de nuestros 
-						procesos como nuestro compromiso
-						ISO 9001: 2008 e ISO 14001:2004.</p><br />
+				<div class="page-header">
+                    <h3>La Empresa</h3>
+                </div>
+				<p>Historia: 
+					Fabrica de Carrocerías Los Cuatro Ases S.R.L. fue fundada en 1968 por cuatro 
+					hombres, profundos conocedores del transporte de carga – dos transportistas y dos 
+					carroceros – quienes uniendo esfuerzos y experiencia  fueron desarrollando las mejoras 
+					que requería el mercado, utilizando siempre materias primas e insumos de alta calidad y 
+					resistencia. 
+					En 1979, con la marca Los Cuatro Ases ya posicionada en el mercado, se constituye 
+					Fábrica de Carrocerías Los Cuatro Ases S.A. 
+					En 1992, al desvincularse  dos de los socios fundadores,   la empresa se convierte en 
+					una pyme familiar.  La dirección junto a  un plantel de obreros y empleados altamente 
+					capacitados conforman una organización  flexible, de estructura simple y dinámica que 
+					permite rápida adaptación a los cambios.
+					Hoy el paradigma gira hacia una  producción  sustentable, libre de impacto ambiental. 
+					Una vez más, a la vanguardia de los tiempos, hemos tomado el desafío integrando 
+					nuestro sistema de gestión de manera de garantizar tanto la calidad de nuestros 
+					procesos como nuestro compromiso
+					ISO 9001: 2008 e ISO 14001:2004.
+                </p>
 			</div>	
 		</div>
 	</div>
-	<br /><br />
-	<footer></footer>
+
+	<footer>
+        
+    </footer>
 <!-- ///////////////////////////////////// SCRIPTS //////////////////////////////////////////////////// -->	
 	<script type="text/javascript">
 		
