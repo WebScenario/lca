@@ -23,7 +23,7 @@
         <!-- Fuente del menu principal, logo -->
         <link href='https://fonts.googleapis.com/css?family=Maven+Pro' rel='stylesheet' type='text/css'>
 
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        
 
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 
@@ -81,7 +81,7 @@
                     // Components                           
                     slide_links             :   'blank',    // Individual links for each slide (Options: false, 'num', 'name', 'blank')
                     thumb_links             :   1,          // Individual thumb links for each slide
-                    thumbnail_navigation    :   0,          // Thumbnail navigation
+                    thumbnail_navigation    :   1,          // Thumbnail navigation
                     slides                  :   [           // Slideshow Images
                                                         {image : 'images/galeria/blurred_home.jpg', title : 'Carroceria 1', thumb : 'images/galeria/blurred_home.jpg', url : 'http://www.nonsensesociety.com/2011/04/maria-kazvan/'},
                                                         {image : 'images/galeria/g2.jpg', title : 'Carroceria 2', thumb : 'images/galeria/g2.jpg', url : 'http://www.nonsensesociety.com/2011/04/maria-kazvan/'},
