@@ -125,7 +125,6 @@
         bottom:0;
         z-index: 100;
         display: none;
-        /*background-color: #000000;*/
     } 
 
     /*html { 
@@ -157,15 +156,7 @@
       left: 0;
     }
 
-    /*  .top-img {
-        min-height: 100%;
-        min-width: 1024px;
-        width: 100%;
-        height: auto;
-        position: relative;
-        top: 0px;
-        left: 0;
-    }*/
+    
 
     @media screen and (max-width: 1024px) {
       .bg-image {
@@ -181,12 +172,7 @@
       }*/
     }
 
-    .btn-gallery {
-      position: absolute;
-      top: 50%;
-      left:45%;
-      z-index: -99;
-    }
+    
 }
     </style>
     
@@ -247,32 +233,25 @@
         </div>
     </nav>
 
-
-
-
-
-
-
-
-
 <!-- //////////////////////////////////// CONTENIDO /////////////////////////////////////////////////// -->
         
-        <div id="panel-block">
-            <img class="img-responsive" src="images/optimised_logo_principal.png" alt="logoLosCuatroAses">
-        </div>
-        
-        <div class="row">
-            <div id="panel-block" class="text-center col-xs-12 col-sm-6 col-xs-push-3 col-sm-push-3">
-                <div id="divTextos">
+        <div class="container-fluid">
+            <!-- Logo -->
+            <div id="panel-block">
+                <img class="img-responsive center-block" src="images/optimised_logo_principal.png" alt="logoLosCuatroAses">
+            </div>
+            
+            <!-- Texto -->
+            <div id="panel-block" class="text-center">
+                <div id="divTextos" class="center-block">
                     <p>Los Cuatro Ases S.A.</p>
                     <p>F&aacute;brica de Carrocer&iacute;as</p>
                 </div>
             </div>
-        </div>
-    
-        <div class="row">
-            <div id="panel-block" class="">
-                <a id="flip" href="#" class="flip btn btn-gallery" role="button">VER GALERIA</a>
+        
+            <!-- Boton de la galeria -->
+            <div id="panel-block">
+                <a id="flip" href="#" class="flip btn center-block" role="button">VER GALERIA</a>
             </div>
         </div>
 
