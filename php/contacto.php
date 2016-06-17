@@ -83,58 +83,55 @@
 
 <!-- //////////////////////////////////// CONTENIDO /////////////////////////////////////////////////// -->
     
-    <div class="container">
-        
+    <!-- Muestra mapa -->
+    <div id="googleMap" style="width:100%;height:400px;"></div>
+
+    <div class="container" style="margin-top:15px;width:60%;">
+       
       <h2>Cont&aacute;ctenos:</h2>
         <div class="row">
-            <div class="col-xs-12 col-sm-7">
+            <div class="col-sm-12">
                 <form  role="form" id="formu" name="formu" method="post" class="form-horizontal">
                     <fieldset class="row"> 
-                        <!-- Muestra los errores -->
+
+                        <div class="form-group">
+                            <label for="email" class="col-sm-12">Email</label>
+                            <div class="col-sm-12">
+                                <input type="email" class="form-control" id="email" name="email" placeholder="Ingrese su email"/>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="asunto" class="col-sm-12">Asunto</label>
+                                <div class="col-sm-12">
+                                    <input type="text" class="form-control" id="asunto" name="asunto" placeholder="Ingrese su asunto"/>
+                                </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="commentario" class="col-sm-12">Mensaje</label>
+                                <div class="col-sm-12">
+                                    <textarea class="form-control" id="msj" name="msj" rows="5" style="resize:none;" placeholder="Ingrese su mensaje"></textarea>
+                                </div>
+                        </div>
+                        
+                       <div class="col-sm-6">
+                            <input class="btn btn-success" type="button" value="Enviar mensaje" id="enviar" name="enviar"/>
+                       </div>
+
+                       <!-- Muestra los errores -->
                         <div class="row">
-                            <div id="recuadroErrores" class="col-xs-12 col-sm-8 col-sm-push-2">
+                            <br><br><br>
+                            <div id="recuadroErrores" class="col-xs-12">
                                 <div id="resultado"></div>
                                 
                                 <footer id="foot"></footer>
                             </div>
                         </div>
 
-                        <div class="form-group">
-                            <label for="email" class="col-sm-2">Email</label>
-                            <div class="col-sm-8">
-                                <input type="email" class="form-control" id="email" name="email" placeholder="Ingrese su email"/>
-                            </div>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="asunto" class="col-sm-2">Asunto</label>
-                                <div class="col-sm-8">
-                                    <input type="text" class="form-control" id="asunto" name="asunto" placeholder="Ingrese su asunto"/>
-                                </div>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="commentario" class="col-sm-2">Mensaje</label>
-                                <div class="col-sm-8">
-                                    <textarea class="form-control" id="msj" name="msj" rows="5" placeholder="Ingrese su mensaje"></textarea>
-                                </div>
-                        </div>
-                        
-                       <div class="col-xs-12 col-sm-3 col-sm-offset-4">
-                            <input class="btn btn-success" type="button" value="Enviar mensaje" id="enviar" name="enviar"/>
-                       </div>
                     </fieldset>
                 </form>
                         
-            </div>
-        
-            <!-- Mapa de google maps -->
-            <div class="col-xs-12 col-sm-5">
-
-                <div class="page-header" id="recuadroMapa">
-                    <h3>Visitenos</h3>
-                    <div id="googleMap"></div>
-                </div>
             </div>
         </div>
     </div>
